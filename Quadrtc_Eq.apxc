@@ -1,10 +1,10 @@
-public class QuadraticEquationSolver {
+public class Equation{
     public Decimal a { get; set; }
     public Decimal b { get; set; }
     public Decimal c { get; set; }
     public List<Decimal> solutions { get; set; }
     
-    public QuadraticEquationSolver() {
+    public Equation() {
         a = 0;
         b = 0;
         c = 0;
@@ -26,5 +26,13 @@ public class QuadraticEquationSolver {
             // No real roots
             solutions.clear();
         }
+    }
+    
+    // Method to clear input fields and solutions
+    public void clearFields() {
+        a = 0;
+        b = 0;
+        c = 0;
+        solutions.clear();
     }
 }
